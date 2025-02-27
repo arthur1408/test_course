@@ -2,8 +2,8 @@ POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-    "name": "Arthur Lavault",
-    "number": "079-904-01-72"
+    "name": "Pierre Jean",
+    "number": "25-111-22-33"
 }
 
 ###
@@ -25,3 +25,18 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/67bf42c2d3e78eb947503130
+
+###
+GET http://localhost:3001/api/persons/5c41c90e84
+
+###
+PUT http://localhost:3001/api/persons/67bf42c2d3e78eb947503130
+Content-Type: application/json
+
+{
+    "name": "Jean Richard",
+    "number": "22-333-44-55"
+}
